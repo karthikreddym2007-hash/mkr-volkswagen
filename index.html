@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volkswagen India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <svg class="vw-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#001e50" stroke="white" stroke-width="2"/>
+          <text x="50" y="66" text-anchor="middle" fill="white" font-size="42" font-weight="bold" font-family="Arial">VW</text>
+        </svg>
+        <span class="brand-name">Volkswagen India</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#why-vw">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="hero-content">
+      <p class="hero-tagline">Das Auto</p>
+      <h1>Welcome to<br />Volkswagen India</h1>
+      <p class="hero-desc">Experience German engineering like never before. Discover our range of premium cars built for India's roads.</p>
+      <a href="#models" class="btn btn-primary">Explore Models</a>
+    </div>
+    <div class="scroll-down">&#8595;</div>
+  </section>
+
+  <section class="models-section" id="models">
+    <div class="container">
+      <h2 class="section-title">Our Models</h2>
+      <p class="section-subtitle">Choose the car that matches your lifestyle</p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="suv">SUV</button>
+        <button class="filter-btn" data-filter="sedan">Sedan</button>
+        <button class="filter-btn" data-filter="hatchback">Hatchback</button>
+      </div>
+
+      <div class="models-grid">
+
+        <div class="car-card slide-up" data-type="suv" style="--card-color: #7a8c5e;">
+          <div class="card-white-cut"></div>
+          <div class="card-label">
+            <span>The new</span>
+            <strong>Taigun</strong>
+          </div>
+          <img src="https://assets.volkswagen.com/is/image/volkswagenag/section-image-home-new?Zml0PWNyb3AsMSZmbXQ9cG5nJndpZD0xMDgwJmhlaT0xMDgwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjg5NmY=" alt="Taigun GT" class="car-img" />
+          <div class="card-footer">
+            <p class="price">₹12.49 Lakhs onwards</p>
+            <a href="#" class="btn btn-dark">Know More</a>
+          </div>
+        </div>
+
+        <div class="car-card slide-up" data-type="suv" style="--card-color: #7b2fbe;">
+          <div class="card-white-cut"></div>
+          <div class="card-label">
+            <span>Tayron</span>
+            <strong>R-Line</strong>
+          </div>
+          <img src="https://assets.volkswagen.com/is/image/volkswagenag/tayron-r-line-overview-model?Zml0PWNyb3AsMSZmbXQ9cG5nJndpZD0xMDgwJmhlaT0xMDgwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjg5NmY=g" alt="Tayron R-Line" class="car-img" />
+          <div class="card-footer">
+            <p class="price">₹48.90 Lakhs onwards</p>
+            <a href="#" class="btn btn-dark">Know More</a>
+          </div>
+        </div>
+
+        <div class="car-card slide-up" data-type="hatchback" style="--card-color: #888888;">
+          <div class="card-white-cut"></div>
+          <div class="card-label">
+            <span>Golf</span>
+            <strong>GTI</strong>
+          </div>
+          <img src="https://assets.volkswagen.com/is/image/volkswagenag/golf-gti-overview-image-model?Zml0PWNyb3AsMSZmbXQ9cG5nJndpZD0xMDgwJmhlaT0xMDgwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjg5NmY=" alt="Golf GTI" class="car-img" />
+          <div class="card-footer">
+            <p class="price">₹32.99 Lakhs onwards</p>
+            <a href="#" class="btn btn-dark">Know More</a>
+          </div>
+        </div>
+
+        <div class="car-card slide-up" data-type="suv" style="--card-color: #cc0000;">
+          <div class="card-white-cut"></div>
+          <div class="card-label">
+            <span>Tiguan</span>
+            <strong>R-Line</strong>
+          </div>
+          <img src="https://assets.volkswagen.com/is/image/volkswagenag/tiguan-r-line-overview-image-model?Zml0PWNyb3AsMSZmbXQ9cG5nJndpZD0xMDgwJmhlaT0xMDgwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjg5NmY=" alt="Tiguan R-Line" class="car-img" />
+          <div class="card-footer">
+            <p class="price">₹35.17 Lakhs onwards</p>
+            <a href="#" class="btn btn-dark">Know More</a>
+          </div>
+        </div>
+
+        <div class="car-card slide-up" data-type="sedan" style="--card-color: #cc0000;">
+          <div class="card-white-cut"></div>
+          <div class="card-label">
+            <span>Virtus</span>
+            <strong>Sport</strong>
+          </div>
+          <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-sport-overview-image-model?Zml0PWNyb3AsMSZmbXQ9cG5nJndpZD0xMDgwJmhlaT0xMDgwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjg5NmY=" alt="Virtus Sport" class="car-img" />
+          <div class="card-footer">
+            <p class="price">₹14.29 Lakhs onwards</p>
+            <a href="#" class="btn btn-dark">Know More</a>
+          </div>
+        </div>
+
+        <div class="car-card slide-up" data-type="sedan" style="--card-color: #001e50;">
+          <div class="card-white-cut"></div>
+          <div class="card-label">
+            <span>Virtus</span>
+            <strong>Chrome</strong>
+          </div>
+          <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-chrome-overview-image-model?Zml0PWNyb3AsMSZmbXQ9cG5nJndpZD0xMDgwJmhlaT0xMDgwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjg5NmY=" alt="Virtus Chrome" class="car-img" />
+          <div class="card-footer">
+            <p class="price">₹11.56 Lakhs onwards</p>
+            <a href="#" class="btn btn-dark">Know More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="why-vw" id="why-vw">
+    <div class="container">
+      <h2 class="section-title light">Why Volkswagen?</h2>
+      <p class="section-subtitle light">Built to last. Engineered to impress.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Safety First</h3>
+          <p>Multiple airbags, ABS, and advanced driver-assist systems keep you and your family safe on every journey.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Thrilling Performance</h3>
+          <p>Turbocharged TSI engines deliver the perfect blend of power and fuel efficiency for Indian roads.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>German Engineering</h3>
+          <p>80+ years of engineering excellence. Precision craftsmanship and premium materials in every car.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers-section" id="offers">
+    <div class="container">
+      <h2 class="section-title">Special Offers</h2>
+      <p class="section-subtitle">Drive home your dream car today</p>
+      <div class="offer-banner">
+        <div class="offer-text">
+          <span class="offer-tag">Limited Time</span>
+          <h3>Monsoon Offers 2026</h3>
+          <p>Get benefits up to ₹2,00,000 on select models. Easy EMI starting at ₹9,999/month. Zero down payment on Virtus & Taigun.</p>
+          <a href="#contact" class="btn btn-light">Get This Offer</a>
+        </div>
+        <div class="offer-image">
+          <img src="https://images.pexels.com/photos/12992872/pexels-photo-12992872.jpeg" alt="Special Offer" />
+        </div>
+      </div>
+      <div class="offer-cards">
+        <div class="offer-card">
+          <h4>💰 Finance Deals</h4>
+          <p>Low interest rates starting at 7.99% p.a. on all models.</p>
+        </div>
+        <div class="offer-card">
+          <h4>🔧 Free Service</h4>
+          <p>First 3 services absolutely free with any new purchase.</p>
+        </div>
+        <div class="offer-card">
+          <h4>🔄 Exchange Bonus</h4>
+          <p>Get up to ₹75,000 extra on exchanging your old car.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <svg class="vw-logo small" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="white" stroke="#001e50" stroke-width="2"/>
+              <text x="50" y="66" text-anchor="middle" fill="#001e50" font-size="42" font-weight="bold" font-family="Arial">VW</text>
+            </svg>
+            <span>Volkswagen India</span>
+          </div>
+          <p class="footer-about">Delivering German engineering to every Indian driveway since 2001. Das Auto — The Car.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#why-vw">Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>📞 1800-209-0909 (Toll Free)</p>
+          <p>📧 info@volkswagen.co.in</p>
+          <p>📍 Volkswagen India Pvt. Ltd,<br />Pune, Maharashtra</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-btn">f</a>
+            <a href="#" class="social-btn">In</a>
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">▶</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Volkswagen India Pvt. Ltd.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
